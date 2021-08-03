@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body{
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  background-color: white !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  background-color: transparent !important;
 }
+
+
+body:not(.header--menu-open) .header-nav-folder-content {
+  background-color: transparent !important;
+}
+
+body:not(.header--menu-open) .header-nav-wrapper a {
+  color:black !important;
+}
+body:not(.header--menu-open) .header-actions .icon--fill svg {
+  fill: #000 !important;
+}
+
+.header-width-inset .header-inner {
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
+
+/* .sqs-announcement-bar-dropzone {
+  min-height: 2.3em ;
+} */
+
+.sqs-block-button-element, .light .image-button a, .light .header-actions .btn, .light .header-skip-link {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.header-nav-item, .user-accounts-text-link, .cart-text-link {
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+h1, h2, h3, h4,p {
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  opacity: 1 !important;
+}
+
+.site-wrapper, .sqs-catalog {
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.cont{
+  width: 100%
+}
+
+fieldset{
+  border: none !important
+}
+
+ [type=password] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  /* border-color: #6b7280; */
+  border-width: 1px;
+  border-radius: 0;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+  font-family: 'Inter', serif !important;
+} */
